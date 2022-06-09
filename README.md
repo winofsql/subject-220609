@@ -21,9 +21,14 @@ $(function(){
 
 		var name = $("#name").val();
 
-		alert(name);
+		name = name.trim();
 
-		event.preventDefault();
+		console.log(name);
+
+		if( name == "" ) {
+			alert("お名前を入力してください");
+			event.preventDefault();
+		}
 
 	});
 
